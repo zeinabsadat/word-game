@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="Fonts/Fonts.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Let's Play</h1>
+        <p id="structure" class="subtitle1">💡 Make a sentence with an article, 
+        an adjective, a noun and a verb.</p>
+        <div id="answer">
+            <div id="sentenceContainer"></div>
+            <button class="btn subtitle2">Check</button>
+        </div>
+        <p class="listTitle subtitle2">articles</p>
+        <div class="list">
+            <p class="body2 item" draggable="true">A</p>
+            <p class="body2 item" draggable="true">The</p>
+        </div>
+        <p class="listTitle subtitle2">adjectives</p>
+        <div class="list">
+            <p class="body2 item" draggable="true">big</p>
+            <p class="body2 item" draggable="true">small</p>
+            <p class="body2 item" draggable="true">cute</p>
+            <p class="body2 item" draggable="true">playful</p>
+        </div>
+        <p class="listTitle subtitle2">nouns</p>
+        <div class="list">
+            <p class="body2 item" draggable="true">dog</p>
+            <p class="body2 item" draggable="true">cat</p>
+            <p class="body2 item" draggable="true">boy</p>
+            <p class="body2 item" draggable="true">girl</p>
+        </div>
+        <p class="listTitle subtitle2">verbs</p>
+        <div class="list">
+            <p class="body2 item" draggable="true">jumps</p>
+            <p class="body2 item" draggable="true">smiles</p>
+            <p class="body2 item" draggable="true">hides</p>
+        </div>
+        <div id="alertModal" class="modal hidden">
+            <div class="modal-content">
+                <p id="alertMessage"></p>
+                <button id="closeModal" class="btn">Close</button>
+            </div>
+        </div>        
+    </div>
+    <script src="javaScript.js"></script> <!-- Your JavaScript file -->
+</body>
+</html>
